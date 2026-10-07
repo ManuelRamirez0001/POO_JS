@@ -3,14 +3,14 @@ function Estudiante(nombre,curso,nota){
     this.curso=curso;
     this.nota=nota;
     this.aprobo=Math.floor(this.nota)>=3.0;
-    this.mostrarResultado=()=>{//como atributo
+    this.mostrarResultado=()=>{//como metodo de la clase
         if(this.aprobo){
             console.log(`El estudiante: ${this.nombre}\n Curso: ${this.curso}\n Nota: ${this.nota}\n-Aprobo`);
         }else{
             console.log(`El estudiante: ${this.nombre}\n Curso: ${this.curso}\n Nota: ${this.nota}\n-Reprobo`);
         }
     }
-    // mostrarResultado=(nota)=>{como metodo
+    // mostrarResultado=(nota)=>{como metodo global
     //     if(nota){
     //         console.log(`El estudiante: ${this.nombre}\n Curso: ${this.curso}\n Nota: ${this.nota}\n-Aprobo`);
     //     }else{
